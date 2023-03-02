@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-qr-decode-image-camera/ios/QrCode/QRScanReader.h

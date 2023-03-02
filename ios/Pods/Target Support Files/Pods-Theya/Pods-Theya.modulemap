@@ -1,0 +1,6 @@
+module Pods_Theya {
+  umbrella header "Pods-Theya-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "QrCode",
+  "version": "1.0.0",
+  "summary": "some interesting summary.",
+  "description": "some interesting summary. 123123",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/deepanrajkumar/react-native-qr-decode-image-camera#readme",
+  "source": {
+    "git": "https://github.com/deepanrajkumar/react-native-qr-decode-image-camera.git",
+    "tag": "1.0.0"
+  },
+  "authors": "Igor",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "ios/QrCode/",
+    "ios/QrCode/*.{h,m}"
+  ],
+  "frameworks": [
+    "UIKit",
+    "AVFoundation",
+    "CoreImage"
+  ],
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

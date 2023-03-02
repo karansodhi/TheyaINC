@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/bdk-rn/bdk-rn-xcframeworks.sh
+${PODS_ROOT}/../../node_modules/bdk-rn/ios/bdkFFI.xcframework

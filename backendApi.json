@@ -1,0 +1,169 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "7b5c254d-3ee7-4616-a80a-6dfb1d177c22",
+      "name": "Theya Backend",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-02-04T17:47:42.000Z"
+    },
+    "item": [
+      {
+        "name": "device",
+        "item": [
+          {
+            "name": "get-challenge",
+            "id": "3132470b-473f-4469-a0b9-24bb258e3a7e",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://{{URL}}/v1/device/get_challenge",
+                "protocol": "http",
+                "host": ["{{URL}}"],
+                "path": ["v1", "device", "get_challenge"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "register-device",
+            "id": "6373c525-7403-440c-9803-8562a5fac438",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"challenge\": \"97f62ef1-fff6-42da-81fd-1e293f1d7f5a\",\n    \"public_key\" : \"-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy1UL8DxjcYN+mML0sQlHOy43A3CYZSpuRi4zidfVXb6xvC5yL71j28oE0J8RFxX9tj7b6ySSH7Mcw0GjsFTaMUercObbMsdg5P6sEqW5jEHsPyjIfZDKE2y4ZtqQlKgyhSsKOxbjF/Lo/A8MXn6Jy928wVbQumLKjJx/0sGnbf28M3/evojJOPe3pCAE2MHk6O7znCwQhVUWYrwY9O+duvCUo6TkBPRyq2tTRMDjuX1FXNwTcEa4MehZWNSfxtB6MkG60eM7z98ACEY0sBF8hEWz0ZExK31dV6AJzzn/BnO1QyToIe4ngjANG29os7bzj7kkiuUzRuthLoG5TTC5lwIDAQAB\\n-----END PUBLIC KEY-----\",\n    \"signature\": \"r0/NxiDxcIL9zIdGMBqTxBHArPLV3jJVbWKt7i/p/MCn4eBWJUj/xHFecTt1yStpgU1G9z4BV8ab3dCec3B3CC8f6jdp6hraXJ3u7n/zdc44qm43MXmL5xNPgJAbuKNJP9cJqGF2ubpKRiaPuFD1jqJ9ZpvI226X5Lkq9dZwWbLUGokEs34IoWE+hN1FeECRnv939X/67XQEUThXJ+/d0v14NJeFom7asWaLev3TVFcTpHwlV6dNTNDvBpVcd0ieUu48PHKSRHhGe8PHeRy4HVm0UhiaW9hjzUzY8+5CZVQbK0bVFQWw2CyblqhhBrwQTE8GzXz1fLZkEjpMU5drHg==\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://{{URL}}/v1/device/register",
+                "protocol": "http",
+                "host": ["{{URL}}"],
+                "path": ["v1", "device", "register"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "login",
+            "id": "aebd1f6f-2ff8-49ce-9e93-b757a356493e",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"device_id\": \"97f62ef1-fff6-42da-81fd-1e293f1d7f5a\",\n    \"challenge_id\" : \"\",\n    \"signature\": \"r0/NxiDxcIL9zIdGMBqTxBHArPLV3jJVbWKt7i/p/MCn4eBWJUj/xHFecTt1yStpgU1G9z4BV8ab3dCec3B3CC8f6jdp6hraXJ3u7n/zdc44qm43MXmL5xNPgJAbuKNJP9cJqGF2ubpKRiaPuFD1jqJ9ZpvI226X5Lkq9dZwWbLUGokEs34IoWE+hN1FeECRnv939X/67XQEUThXJ+/d0v14NJeFom7asWaLev3TVFcTpHwlV6dNTNDvBpVcd0ieUu48PHKSRHhGe8PHeRy4HVm0UhiaW9hjzUzY8+5CZVQbK0bVFQWw2CyblqhhBrwQTE8GzXz1fLZkEjpMU5drHg==\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://{{URL}}/v1/device/login",
+                "protocol": "http",
+                "host": ["{{URL}}"],
+                "path": ["v1", "device", "login"]
+              }
+            },
+            "response": []
+          }
+        ],
+        "id": "8b101490-b18d-4f8c-a869-81ce92d96b16"
+      },
+      {
+        "name": "register-or-login",
+        "id": "fe15eb9a-f7ab-429d-82bf-1145af570998",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"email\": \"nikhilgi3409@gmail.com\",\n    \"name\" : \"\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://{{URL}}/v1/register_or_login",
+            "protocol": "http",
+            "host": ["{{URL}}"],
+            "path": ["v1", "register_or_login"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "authenticate",
+        "id": "205418be-80d3-47d5-8e0c-910a6695c6e7",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://{{URL}}/v1/authenticate?token=",
+            "protocol": "http",
+            "host": ["{{URL}}"],
+            "path": ["v1", "authenticate"],
+            "query": [
+              {
+                "key": "token",
+                "value": ""
+              }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "post-login",
+        "id": "510392dc-fd08-4e41-8a95-2a5cc3a577f0",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://{{URL}}/v1/post_login?session_token=&user_id=",
+            "protocol": "http",
+            "host": ["{{URL}}"],
+            "path": ["v1", "post_login"],
+            "query": [
+              {
+                "key": "session_token",
+                "value": ""
+              },
+              {
+                "key": "user_id",
+                "value": ""
+              }
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+}

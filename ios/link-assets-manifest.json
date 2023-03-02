@@ -1,0 +1,49 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Karla-Bold.ttf",
+      "sha1": "e43476d9509fb03868df27d0d9e84f13560d3605"
+    },
+    {
+      "path": "assets/fonts/Karla-ExtraBold.ttf",
+      "sha1": "ab60125bff8ec78e97c5d2da7bf7f5a0867f723e"
+    },
+    {
+      "path": "assets/fonts/Karla-ExtraLight.ttf",
+      "sha1": "a05b5234ca0ebbc5824bfcc967354d8646441e60"
+    },
+    {
+      "path": "assets/fonts/Karla-Light.ttf",
+      "sha1": "f497b415db464a455d9d01120a07765f773e17dd"
+    },
+    {
+      "path": "assets/fonts/Karla-Medium.ttf",
+      "sha1": "15d3289b2a679f4efa90fe8a8f4da94030c1672f"
+    },
+    {
+      "path": "assets/fonts/Karla-Regular.ttf",
+      "sha1": "0f239aa4f2a6cd8a69d5cc71e0c05601c80b62d0"
+    },
+    {
+      "path": "assets/fonts/Karla-SemiBold.ttf",
+      "sha1": "87ecea40f62014ac2f67ec3772e7847945552b71"
+    },
+    {
+      "path": "assets/fonts/Lato-Bold.ttf",
+      "sha1": "542498221d97bee5bdbccf86ee8890bf8e8005c9"
+    },
+    {
+      "path": "assets/fonts/Lato-Light.ttf",
+      "sha1": "ad0d178564445a535b15d417f5b18019923d3bab"
+    },
+    {
+      "path": "assets/fonts/Lato-Regular.ttf",
+      "sha1": "e923c72eda5e50a87e18ff5c71e9ef4b3b6455a3"
+    },
+    {
+      "path": "assets/fonts/Montserrat-SemiBold.ttf",
+      "sha1": "8580dec824bbdb6ce24d04d3aaf360776339f0a7"
+    }
+  ]
+}

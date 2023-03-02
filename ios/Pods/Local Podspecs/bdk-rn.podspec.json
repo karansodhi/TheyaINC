@@ -1,0 +1,24 @@
+{
+  "name": "bdk-rn",
+  "version": "0.1.1",
+  "summary": "A React Native library for the Bitcon Development Kit (https://bitcoindevkit.org/)",
+  "license": "MIT",
+  "authors": "Bitcoin Zavior <BitcoinZavior@gmail.com>",
+  "homepage": "https://github.com/LtbLightning/bdk-rn",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/LtbLightning/bdk-rn.git",
+    "tag": "v0.1.1"
+  },
+  "source_files": "ios/**/*.{h,m,swift}",
+  "dependencies": {
+    "React": [
+
+    ]
+  },
+  "ios": {
+    "vendored_frameworks": "ios/bdkFFI.xcframework"
+  }
+}

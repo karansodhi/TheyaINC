@@ -1,0 +1,30 @@
+{
+  "name": "react-native-quick-base64",
+  "version": "2.0.5",
+  "summary": "A native implementation of base64 in C++ for React Native",
+  "homepage": "https://github.com/craftzdog/react-native-quick-base64#readme",
+  "license": "MIT",
+  "authors": "Takuya Matsuyama <hi@craftz.dog> (https://github.com/craftzdog)",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/craftzdog/react-native-quick-base64.git",
+    "tag": "2.0.5"
+  },
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "HAVE_FULLFSYNC=1",
+    "WARNING_CFLAGS": "-Wno-shorten-64-to-32 -Wno-comma -Wno-unreachable-code -Wno-conditional-uninitialized -Wno-deprecated-declarations",
+    "USE_HEADERMAP": "No"
+  },
+  "header_mappings_dir": "cpp",
+  "source_files": [
+    "ios/**/*.{h,m,mm}",
+    "cpp/**/*.{h,cpp}"
+  ],
+  "dependencies": {
+    "React-Core": [
+
+    ]
+  }
+}

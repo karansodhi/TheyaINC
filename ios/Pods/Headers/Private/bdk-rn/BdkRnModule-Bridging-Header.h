@@ -1,0 +1,1 @@
+../../../../../node_modules/bdk-rn/ios/BdkRnModule-Bridging-Header.h

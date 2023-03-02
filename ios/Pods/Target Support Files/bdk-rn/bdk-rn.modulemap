@@ -1,0 +1,6 @@
+module bdk_rn {
+  umbrella header "bdk-rn-umbrella.h"
+
+  export *
+  module * { export * }
+}
